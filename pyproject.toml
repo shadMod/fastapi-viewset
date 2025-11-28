@@ -1,0 +1,23 @@
+[project]
+name = "fastapi-viewset"
+version = "0.1.0"
+description = "Quick helper with Viewset to be used with fastapi."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard]>=0.121.2",
+]
+
+[tool.ruff]
+line-length = 120
+select = [
+    "E", # Pycodestyle Errors
+    "F", # Pyflakes
+    "W", # Pycodestyle Warnings
+    "B", # Bugbear
+    "I", # Import sorting
+    "D", # Docstring
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
